@@ -6,7 +6,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/Home.vue')
+      component: () => import('../views/Home.vue'),
+      meta: {
+        showfooter: true // 在首页显示底部导航栏
+      }
+    },
+    {
+      path: '/cute',
+      name: 'cute',
+      component: () => import('../views/Cute.vue'),
+      meta: {
+        showfooter: true // 在首页显示底部导航栏
+      }
     }
   ]
 })
