@@ -18,6 +18,22 @@ const router = createRouter({
       meta: {
         showfooter: true // 在首页显示底部导航栏
       }
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: () => import('../views/Cart.vue'),
+      meta: {
+        showfooter: true // 在首页显示底部导航栏
+      }
+    },
+    {
+      path: '/my',
+      name: 'my',
+      component: () => import('../views/My.vue'),
+      meta: {
+        showfooter: true // 在首页显示底部导航栏
+      }
     }
   ]
 })
